@@ -32,7 +32,9 @@ $ cd "Smart-Bank"
 - The repository includes a safe `banking.env` for the dev user.
 - Copy it to `.env` in the project root:
 
+```bash
 $ cp banking.env .env
+```
 
 3️⃣ **Database Setup**
 - Ensure PostgreSQL is running.
@@ -44,21 +46,6 @@ $ cp banking.env .env
 - Run the main class: `SmartBankApp.java`
 
 The application will read the `.env` file automatically and connect to the database.
-
-5️⃣ **Optional: Use Environment Variables**
-Instead of `.env`, you can set environment variables:
-
-**Windows (PowerShell):**
-$ setx DB_URL "jdbc:postgresql://..."
-$ setx DB_USER "dev_user"
-$ setx DB_PASS "DevUserPassword123"
-
-**Linux/macOS (bash):**
-$ export DB_URL="jdbc:postgresql://..."
-$ export DB_USER="dev_user"
-$ export DB_PASS="DevUserPassword123"
-
-The application will use these if `.env` is not present.
 
 ---
 
