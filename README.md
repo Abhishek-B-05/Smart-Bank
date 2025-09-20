@@ -22,6 +22,7 @@ It allows users to manage accounts, perform transactions, and keep track of bala
 
 1️⃣ **Clone the Repository**
 $ git clone https://github.com/Abhishek-B-05/Smart-Bank.git
+
 $ cd "Smart-Bank"
 
 2️⃣ **Use the Provided Dev `.env` File**
