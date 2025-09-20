@@ -20,26 +20,19 @@ It allows users to manage accounts, perform transactions, and keep track of bala
 
 ## Quick Start ⚡
 
-## Setup Instructions for SmartBankApp
-
 1️⃣ **Clone the Repository**
 $ git clone https://github.com/Abhishek-B-05/Smart-Bank.git
 $ cd "Smart-Bank"
 
-2️⃣ **Create Your `.env` File**
-$ cp .env.example .env
+2️⃣ **Use the Provided Dev `.env` File**
+- The repository includes a safe `banking.env` for the dev user.
+- Copy it to `.env` in the project root:
 
-Open `.env` and verify the dev user credentials:
-
-DB_URL=jdbc:postgresql://main-smart-bank.d.aivencloud.com:13580/defaultdb?ssl=require
-DB_USER=dev_user
-DB_PASS=DevUserPassword123
-
-> ⚠️ Note: `.env` is ignored by Git, so your credentials remain private.
+$ cp banking.env .env
 
 3️⃣ **Database Setup**
 - Ensure PostgreSQL is running.
-- The dev user has **limited access**: can read/write tables but cannot alter DB settings or drop tables.
+- The dev user has limited access: can read/write tables but cannot alter DB settings or drop tables.
 - Use provided SQL scripts (if any) to create tables or initial data.
 
 4️⃣ **Run the Application**
@@ -62,7 +55,6 @@ $ export DB_USER="dev_user"
 $ export DB_PASS="DevUserPassword123"
 
 The application will use these if `.env` is not present.
-
 
 ---
 
