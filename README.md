@@ -83,10 +83,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## Collaborators 🤝
+## Collaborators 👥
 
 - Abhishek B. – Frontend & Backend Developer
-– Abhiram J. - Database Administrator & Backend Developer
+- Abhiram J. - Database Administrator & Backend Developer
 - Sreeshanth M. - Backend Developer
 - Elden Sharmin - Backend Developer
 
