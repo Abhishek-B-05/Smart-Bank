@@ -20,27 +20,49 @@ It allows users to manage accounts, perform transactions, and keep track of bala
 
 ## Quick Start ⚡
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/smart-bank.git
-cd smart-bank
-```
+## Setup Instructions for SmartBankApp
 
-### 2. Setup PostgreSQL
-- Create a database (e.g., `smartbank`)  
-- Create required tables: `users`, `customers`, `accounts`, `transactions`  
-- Update DB credentials in `SmartBankApp.java`:
-```java
-private static final String DB_URL = "jdbc:postgresql://<host>:<port>/<database>?ssl=require";
-private static final String DB_USER = "<username>";
-private static final String DB_PASS = "<password>";
-```
+1️⃣ **Clone the Repository**
+$ git clone https://github.com/Abhishek-B-05/Smart-Bank.git
+$ cd "Smart-Bank"
 
-### 3. Run the application
-```bash
-javac SmartBankApp.java
-java SmartBankApp
-```
+2️⃣ **Create Your `.env` File**
+$ cp .env.example .env
+
+Open `.env` and verify the dev user credentials:
+
+DB_URL=jdbc:postgresql://main-smart-bank.d.aivencloud.com:13580/defaultdb?ssl=require
+DB_USER=dev_user
+DB_PASS=DevUserPassword123
+
+> ⚠️ Note: `.env` is ignored by Git, so your credentials remain private.
+
+3️⃣ **Database Setup**
+- Ensure PostgreSQL is running.
+- The dev user has **limited access**: can read/write tables but cannot alter DB settings or drop tables.
+- Use provided SQL scripts (if any) to create tables or initial data.
+
+4️⃣ **Run the Application**
+- Open the project in IntelliJ.
+- Run the main class: `SmartBankApp.java`
+
+The application will read the `.env` file automatically and connect to the database.
+
+5️⃣ **Optional: Use Environment Variables**
+Instead of `.env`, you can set environment variables:
+
+**Windows (PowerShell):**
+$ setx DB_URL "jdbc:postgresql://..."
+$ setx DB_USER "dev_user"
+$ setx DB_PASS "DevUserPassword123"
+
+**Linux/macOS (bash):**
+$ export DB_URL="jdbc:postgresql://..."
+$ export DB_USER="dev_user"
+$ export DB_PASS="DevUserPassword123"
+
+The application will use these if `.env` is not present.
+
 
 ---
 
