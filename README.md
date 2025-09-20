@@ -2,7 +2,7 @@
 
 [![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)](https://www.java.com/) 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/) 
-[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/Abhishek-B-05/Smart-Bank/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/Abhishek-B-05/Smart-Bank/blob/master/LICENSE)
 
 **SmartBank** is a console-based banking system built in Java with PostgreSQL as the backend.  
 It allows users to manage accounts, perform transactions, and keep track of balances in a secure and easy-to-use way.
