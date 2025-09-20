@@ -56,11 +56,6 @@ java SmartBankApp
 4. **Delete account** if needed (permanent)  
 5. **Logout**  
 
----
-
-## Screenshots 📸
-
-*(Add screenshots or a GIF of the console app here to showcase the app in action.)*  
 
 ---
 
