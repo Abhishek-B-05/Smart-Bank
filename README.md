@@ -28,6 +28,7 @@ $ git clone https://github.com/Abhishek-B-05/Smart-Bank.git
 $ cd "Smart-Bank"
 ```
 
+
 2️⃣ **Use the Provided Dev `.env` File**
 - The repository includes a safe `banking.env` for the dev user.
 - Copy it to `.env` in the project root:
@@ -36,10 +37,12 @@ $ cd "Smart-Bank"
 $ cp banking.env .env
 ```
 
+
 3️⃣ **Database Setup**
 - Ensure PostgreSQL is running.
 - The dev user has limited access: can read/write tables but cannot alter DB settings or drop tables.
 - Use provided SQL scripts (if any) to create tables or initial data.
+
 
 4️⃣ **Run the Application**
 - Open the project in IntelliJ.
