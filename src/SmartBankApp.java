@@ -41,12 +41,12 @@ public class SmartBankApp {
                     e.printStackTrace();
                 }
             } else {
-                System.out.println("❌ File not found at: " + envFile.getAbsolutePath());
+//                System.out.println("❌ File not found at: " + envFile.getAbsolutePath());
             }
         }
 
         if (!loaded) {
-            System.err.println("❌ Could not find a valid .env file. Please ensure it exists in the project root or src folder.");
+//            System.err.println("❌ Could not find a valid .env file. Please ensure it exists in the project root or src folder.");
             System.exit(1);
         }
 
@@ -78,7 +78,8 @@ public class SmartBankApp {
                 switch (choice) {
                     case 1 -> registerUser();
                     case 2 -> {
-                        if (loginUser()) loggedInMenu();
+                        if (loginUser())
+                            loggedInMenu();
                     }
                     case 3 -> {
                         running = false;
@@ -138,10 +139,22 @@ public class SmartBankApp {
             String name = sc.nextLine();
             System.out.print("Enter Email: ");
             String email = sc.nextLine();
+            if(email.isEmpty() || !email.contains("@gmail.com")) {
+                System.out.println("❌ Invalid email format.");
+                return;
+            }
             System.out.print("Enter Password: ");
             String password = sc.nextLine();
+            if (password.length() < 8 || !password.matches(".*[^a-zA-Z0-9].*")) {
+                System.out.println("❌ Password must be at least 8 characters long and contain at least one special character.");
+                return;
+            }
             System.out.print("Enter Phone: ");
             String phone = sc.nextLine();
+            if(phone.isEmpty() || phone.length() != 10) {
+                System.out.println("❌ Invalid phone number format.");
+                return;
+            }
             System.out.print("Enter Address: ");
             String address = sc.nextLine();
             System.out.print("Enter Account Number: ");
