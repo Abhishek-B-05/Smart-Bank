@@ -417,11 +417,6 @@ public class SmartBankApp {
 
     // 🔹 7. Delete logged-in user
     private static void deleteUser() {
-        if (loggedInUserId == -1) {
-            System.out.println("⚠️ You must be logged in to delete your account.");
-            return;
-        }
-
         sc.nextLine(); // clear buffer
         System.out.print("⚠️ Are you sure you want to permanently delete your account? (Y/N): ");
         String confirm = sc.nextLine().trim().toUpperCase();
